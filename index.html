@@ -1,0 +1,65 @@
+<!-- ! put exmaclation and hit tab  Emmet abreviation--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Add Skeleton cdn--> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css" integrity="sha512-bkbbtvfcVjmlzyq/v4GaSiyJY3DStQhRIbJY9D0qrheR4LgSNNzrEQcdkqdJQUbuYCkLkLCj5icLxdjxRQKsJg==" crossorigin="anonymous" />
+
+   <!--Adding CSS-->
+   <style>
+      .success,.error {
+         color:white;
+         padding: 5px;
+         margin: 5px 0 15px 0;
+      }
+      .success{
+         background: yellowgreen;
+      }
+      .error{
+         background: pink;
+      }
+      #btn{
+         background: salmon;
+      }
+   </style>
+   <title>Book List</title>
+</head>
+<body>
+   <div class="container">
+      <h2> Add Book</h2>
+      <form id="book-form">
+         <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" class="u-full-width">
+         </div>
+         <div>
+            <label for="author">Author</label>
+            <input type="text" id="author" class="u-full-width">
+         </div>
+         <div>
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="u-full-width">
+         </div>
+         <div>
+            <input type="submit" value="Submit" class="u-full-width" id=btn >
+         </div>
+      </form>
+     
+      <table class="u-full-width">
+         <thead>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+         </thead>
+         <tbody id="book-list"></tbody>
+      </table>
+   </div>
+   <!--<script src="app.js"></script>-->
+   <script src="appES6.js"></script>
+</body>  
+</html>
